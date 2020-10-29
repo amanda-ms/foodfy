@@ -1,0 +1,226 @@
+/*----------------------------------Header----------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__list {
+  padding-left: 8.7%;
+  display: flex;
+  list-style: none;
+}
+
+.header__list li {
+  padding-right: 21px;
+  font-size: 16px;
+  color: #111111;
+  font-weight: 500;
+}
+
+.header__list li a {
+  text-decoration: none;
+  color: #111111;
+}
+
+.header__list .ativo a {
+  color: rgb(216, 118, 134);
+}
+/*--------------------------------------------------------------------------*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-chef {
+  display: flex;
+  justify-content: space-between;
+  background: #fbdfdb;
+  border-radius: 30px;
+  padding: 0 70px;
+  align-items: center;
+}
+
+.section-chef__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-chef__description h1 {
+  font-size: 32px;
+  color: #111111;
+  padding-bottom: 10px;
+}
+
+.section-chef__description p {
+  max-width: 330px;
+  opacity: 0.7;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.section-chef__figure {
+  padding-top: 6%;
+  padding-right: 4%;
+}
+
+.section-receitas-more {
+  padding: 4.5% 0;
+}
+
+.section-receitas-more h2 {
+  padding-bottom: 1.8%;
+}
+
+.aux {
+  padding: 1% 0 3% 0;
+}
+
+/*--------------------------CARDS----------------------------*/
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 20px;
+  margin: 0 auto;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card__figure img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card__figure img:hover {
+  opacity: 0.8;
+  transition: 400ms;
+}
+
+.card__description {
+  padding-top: 15px;
+}
+
+.card__description h3 {
+  font-size: 18px;
+  color: #111111;
+  font-weight: 500;
+}
+
+.card__description span {
+  font-size: 14px;
+  color: #777777;
+}
+
+/*---------------------FOOTER--------------------- */
+
+.footer {
+  background: #eeeeee;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #999999;
+}
+
+.main-sobre {
+  padding: 1% 0 3% 0;
+}
+
+.main-sobre h1 {
+  font-size: 24px;
+  color: #111111;
+}
+
+.main-sobre h2 {
+  font-size: 20px;
+  color: #111111;
+  padding-top: 5px;
+}
+
+.main-sobre p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  padding: 18px 0;
+}
+
+/* --------------------MODAL--------------------------------------- */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: #fff;
+  width: 40%;
+  height: 45%;
+  margin: 30vh auto;
+  position: relative;
+  border-radius: 16px;
+}
+
+.modal .close-modal {
+  position: absolute;
+  right: 42%;
+  top: 90%;
+  cursor: pointer;
+}
+
+.modal .maximize-modal {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  cursor: pointer;
+}
+
+/*---------------------MODAL ACTIVE------------------------------------ */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*---------------------MODAL MAXIMIZE------------------------------------ */
+
+.modal.maximize {
+  width: 60%;
+  height: 60%;
+  margin: 5vh auto;
+}
+
+.img-modal {
+  position: absolute;
+  width: 90%;
+  height: 150px;
+  top: 20px;
+  left: 26px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.title-modal {
+  display: flex;
+  justify-content: center;
+  padding-top: 180px;
+}
+
+.autor-modal {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  font-size: 13px;
+  color: #777777;
+}
